@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Натяжні стелі — Якість та Стиль</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: 'Arial', sans-serif; 
+            background-color: #f4f4f4; 
+        }
+        /* Шапка сайту */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Головний блок */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('fon.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+             /* Додаємо анімацію: назва 'bgFade', тривалість 20 секунд, нескінченно */
+            animation: bgFade 20s infinite;
+        }
+        /* Налаштовуємо саму анімацію зміни картинок */
+        @keyframes bgFade {
+            0%, 100% { 
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('fon.jpg'); 
+                background-size: cover;
+            }
+            33% { 
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('fon3.jpg'); 
+                background-position: center center;
+                background-size: cover;
+            }
+            66% { 
+                background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('fon2.jpg'); 
+                background-size: cover;
+    }
+        .hero h2 { font-size: 3em; margin: 0; }
+        .hero p { font-size: 1.5em; }
+        
+        /* Кнопка замовлення */
+        .btn {
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        .btn:hover { background-color: #c0392b; }
+
+        /* Блок з перевагами */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background: white;
+        }
+        .feature-item { text-align: center; width: 30%; }
+        .feature-item h3 { color: #2c3e50; }
+        /* Блок контактів */
+        .contacts {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .contacts h2 { margin-bottom: 30px; }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: nowrap;
+        }
+        .contact-item {
+            font-size: 1.1em;
+        }
+        .contact-item a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-item a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Натяжні стелі</h1>
+    </header>
+
+    <div class="hero">
+        <h2>Натяжні стелі Овруч і Народичі</h2>
+        <p>Монтаж за 1 день з гарантією 10 років</p>
+        <a href="#" class="btn" onclick="alert('Ми скоро вам зателефонуємо!')">Розрахувати вартість</a>
+    </div>
+
+    <div class="features">
+        <div class="feature-item">
+            <h3>Швидко</h3>
+            <p>Встановлюємо протягом дня без пилу</p>
+        </div>
+        <div class="feature-item">
+            <h3>Якісно</h3>
+            <p>Лише сертифіковані матеріали </p>
+        </div>
+        <div class="feature-item">
+            <h3>Вигідно</h3>
+            <p>Безкоштовний замір та чесна ціна</p>
+        </div>
+    </div class="contacts">
+         <h2>Нащі контакти</h2>
+         <div class="contact-info">
+			 <p> 📞 Телефон:</p>
+			 <a href="tel:+380973442332">+380973442332</a>
+		</div>
+		 <div class="contact-item">
+			 <p>📍 Ми працюємо:</p>
+			 <p> Овруч, Народичі і села</p>
+		</div/
+		<div class="contact-item">
+			<p>💬 Месенджер:</p>
+			<a href="viber://chat?number=+380973442332">Viber</a>
+			<a href="https://t.me">Telegram</a>
+		</div>
+	</div>
+	<p style="margin-top: 40px; font-size: 0.8em; opacity: 0.6;">© 2024 СтеляПро. Всі права захищені</p>
+    
+</body>
+</html> 
