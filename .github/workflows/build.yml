@@ -38,7 +38,7 @@ jobs:
       run: flet pack main.py
 
     - name: Build Android APK
-      run: flet build apk main.py --no-interactive
+      run: yes | flet build apk main.py 
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
